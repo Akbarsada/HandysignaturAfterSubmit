@@ -1,0 +1,579 @@
+/***
+ *               ii.                                         ;9ABH,          
+ *              SA391,                                    .r9GG35&G          
+ *              &#ii13Gh;                               i3X31i;:,rB1         
+ *              iMs,:,i5895,                         .5G91:,:;:s1:8A         
+ *               33::::,,;5G5,                     ,58Si,,:::,sHX;iH1        
+ *                Sr.,:;rs13BBX35hh11511h5Shhh5S3GAXS:.,,::,,1AG3i,GG        
+ *                .G51S511sr;;iiiishS8G89Shsrrsh59S;.,,,,,..5A85Si,h8        
+ *               :SB9s:,............................,,,.,,,SASh53h,1G.       
+ *            .r18S;..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,....,,.1H315199,rX,       
+ *          ;S89s,..,,,,,,,,,,,,,,,,,,,,,,,....,,.......,,,;r1ShS8,;Xi       
+ *        i55s:.........,,,,,,,,,,,,,,,,.,,,......,.....,,....r9&5.:X1       
+ *       59;.....,.     .,,,,,,,,,,,...        .............,..:1;.:&s       
+ *      s8,..;53S5S3s.   .,,,,,,,.,..      i15S5h1:.........,,,..,,:99       
+ *      93.:39s:rSGB@A;  ..,,,,.....    .SG3hhh9G&BGi..,,,,,,,,,,,,.,83      
+ *      G5.G8  9#@@@@@X. .,,,,,,.....  iA9,.S&B###@@Mr...,,,,,,,,..,.;Xh     
+ *      Gs.X8 S@@@@@@@B:..,,,,,,,,,,. rA1 ,A@@@@@@@@@H:........,,,,,,.iX:    
+ *     ;9. ,8A#@@@@@@#5,.,,,,,,,,,... 9A. 8@@@@@@@@@@M;    ....,,,,,,,,S8    
+ *     X3    iS8XAHH8s.,,,,,,,,,,...,..58hH@@@@@@@@@Hs       ...,,,,,,,:Gs   
+ *    r8,        ,,,...,,,,,,,,,,.....  ,h8XABMMHX3r.          .,,,,,,,.rX:  
+ *   :9, .    .:,..,:;;;::,.,,,,,..          .,,.               ..,,,,,,.59  
+ *  .Si      ,:.i8HBMMMMMB&5,....                    .            .,,,,,.sMr
+ *  SS       :: h@@@@@@@@@@#; .                     ...  .         ..,,,,iM5
+ *  91  .    ;:.,1&@@@@@@MXs.                            .          .,,:,:&S
+ *  hS ....  .:;,,,i3MMS1;..,..... .  .     ...                     ..,:,.99
+ *  ,8; ..... .,:,..,8Ms:;,,,...                                     .,::.83
+ *   s&: ....  .sS553B@@HX3s;,.    .,;13h.                            .:::&1
+ *    SXr  .  ...;s3G99XA&X88Shss11155hi.                             ,;:h&,
+ *     iH8:  . ..   ,;iiii;,::,,,,,.                                 .;irHA  
+ *      ,8X5;   .     .......                                       ,;iihS8Gi
+ *         1831,                                                 .,;irrrrrs&@
+ *           ;5A8r.                                            .:;iiiiirrss1H
+ *             :X@H3s.......                                .,:;iii;iiiiirsrh
+ *              r#h:;,...,,.. .,,:;;;;;:::,...              .:;;;;;;iiiirrss1
+ *             ,M8 ..,....,.....,,::::::,,...         .     .,;;;iiiiiirss11h
+ *             8B;.,,,,,,,.,.....          .           ..   .:;;;;iirrsss111h
+ *            i@5,:::,,,,,,,,.... .                   . .:::;;;;;irrrss111111
+ *            9Bi,:,,,,......                        ..r91;;;;;iirrsss1ss1111
+ */
+
+
+
+   /*////////////////////////////////////////////////////////////////
+  //              GLOBAL                                          //
+ //                                                              //
+////////////////////////////////////////////////////////////////*/
+
+/* ===PRIMARY=== */
+
+ /* .row{
+
+
+   border: black solid 1px;
+}
+
+#formularauswahl_rowID1, #sichtbarkeitZusatzbild, #sichtbarkeitSiegelbild, #sichtbarkeitTextfeldSignator, #sichtbarkeitTextfeldOrt, #sichtbarkeitTextfeldGrund, #sichtbarkeitTextfeldZeitstempel, .auswahl {
+
+
+   border: red solid 4px;
+}  */
+
+
+/* ===HEADER=== */
+
+.auswahlPDFInfo_header{
+  font-weight: bold;
+  padding:7px;
+border-radius: 5px;
+  background-color: rgba(169, 169, 169, 0.364);
+}
+
+#gf_felder > span {
+  display: block;
+margin-bottom: 10px;
+
+
+}
+
+.fields_kasten{
+  border-radius: 5px;
+  max-height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(169, 169, 169, 0.138);
+
+  padding:7px;
+}
+
+/* ===PRIMARY=== */
+
+
+.hr_linie{
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+#rahmen_iframe{
+
+    background-color: #ffffff;
+
+}
+
+.fuchslogo{
+
+height: 200px;
+margin-top: 40px;
+
+    margin-left: 20px;
+    margin-right: auto;
+    display: block;
+
+position: fixed;
+    height: 10%;
+}
+
+.toast{
+
+ background-color:#f3d703c4!important;
+    width: 600px;
+    height: 100px;
+ color: #2F2207!important;
+ border-radius: 20px;
+ font-weight: bolder;
+
+ background-image: url("../img/logo100h.png");
+
+
+background-position: right; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+
+ 
+  
+  }
+
+
+.infoToast{
+
+    background-color:#f3030383!important;
+    width: 600px;
+    height: 100px;
+    color: #2F2207!important;
+    border-radius: 20px;
+    font-weight: bolder;
+
+    background-image:none;
+
+}
+
+
+
+  blockquote {
+    margin: 20px 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid green;
+    font-size: 1.5em;
+}
+.hacken{
+
+
+  margin-left: 25px;;
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+
+  border-right: 2px solid #F3D503;
+  border-bottom: 2px solid #F3D503;
+
+}
+
+/* ===HEADER=== */
+
+.weitereInfos{margin-bottom: 40px;}
+
+/* ===SIDEBAR=== */
+
+
+   /*////////////////////////////////////////////////////////////////
+  //              NAVIGATION                                      //
+ //                                                              //
+////////////////////////////////////////////////////////////////*/
+
+.uberschriften_collaps{
+    margin-bottom: 50px!important;
+}
+ 
+
+
+
+
+
+
+   /*////////////////////////////////////////////////////////////////
+  //              FOOTER                                          //
+ //                                                              //
+////////////////////////////////////////////////////////////////*/
+
+
+#atrust_custom_logo_img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.has_atrust_login img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#has_atrust_text{
+ text-align: center;
+}
+   /*////////////////////////////////////////////////////////////////
+  //              COLOR                                           //
+ //                                                              //
+////////////////////////////////////////////////////////////////*/
+
+
+
+
+/* ===PRIMARY=== */
+
+
+
+
+
+/* ===HEADER=== */
+
+
+
+/* ===SIDEBAR=== */
+
+
+
+/* ===FOOTER=== */
+
+
+.vorschaubild{
+
+  margin-bottom: 150px;
+
+}
+
+
+.wrap{
+   color: #2F2207!important;
+ 
+ 
+ }
+ nav a {
+   color: #2F2207!important;
+   font-weight: 500;
+ }
+ 
+ .page-footer  {
+   color: #2F2207!important;
+   font-weight: 300;
+ }
+ 
+ /* .nav-wrapper{
+   background-image: url('../img/logo_handysignatur.svg'); 
+   background-repeat: no-repeat;
+  background-position: right;
+   background-size: 5%;
+ 
+ 
+    
+ 
+ } */
+ 
+ nav, footer {
+ color: #ffd800!important;
+   border-radius: 20px;
+  background-color: #fdd835 !important;
+ }
+ 
+ .switch label input[type=checkbox]:checked + .lever:after {
+   background-color: #F3D503;
+ }
+ 
+ 
+ .switch label input[type=checkbox]:checked + .lever {
+   background-color: rgba(253, 216, 53, 0.3);
+ }
+ 
+ 
+ .select-wrapper input.select-dropdown:focus {
+   border-bottom: 1px solid #F3D503;
+ }
+ 
+ .input-field .prefix.active {
+   color: #F3D503;
+ }
+ 
+ .icon_prefix .prefix.active {
+   color: #F3D503;
+ }
+ 
+ input:not([type]):focus:not([readonly]),
+ input[type=text]:not(.browser-default):focus:not([readonly]),
+ input[type=password]:not(.browser-default):focus:not([readonly]),
+ input[type=email]:not(.browser-default):focus:not([readonly]),
+ input[type=url]:not(.browser-default):focus:not([readonly]),
+ input[type=time]:not(.browser-default):focus:not([readonly]),
+ input[type=date]:not(.browser-default):focus:not([readonly]),
+ input[type=datetime]:not(.browser-default):focus:not([readonly]),
+ input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+ input[type=tel]:not(.browser-default):focus:not([readonly]),
+ input[type=number]:not(.browser-default):focus:not([readonly]),
+ input[type=search]:not(.browser-default):focus:not([readonly]),
+ textarea.materialize-textarea:focus:not([readonly]) {
+   border-bottom: 1px solid #F3D503;
+   -webkit-box-shadow: 0 1px 0 0 #F3D503;
+           box-shadow: 0 1px 0 0 #F3D503;
+ }
+ 
+ 
+ 
+ input:not([type]):focus:not([readonly]) + label,
+ input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+ input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+ input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+ input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+ input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+ input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+ input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+ input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+ input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+ input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+ input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+ textarea.materialize-textarea:focus:not([readonly]) + label {
+   color: black;
+ }
+ 
+ 
+ input.valid:not([type]), input.valid:not([type]):focus,
+ input.valid[type=text]:not(.browser-default),
+ input.valid[type=text]:not(.browser-default):focus,
+ input.valid[type=password]:not(.browser-default),
+ input.valid[type=password]:not(.browser-default):focus,
+ input.valid[type=email]:not(.browser-default),
+ input.valid[type=email]:not(.browser-default):focus,
+ input.valid[type=url]:not(.browser-default),
+ input.valid[type=url]:not(.browser-default):focus,
+ input.valid[type=time]:not(.browser-default),
+ input.valid[type=time]:not(.browser-default):focus,
+ input.valid[type=date]:not(.browser-default),
+ input.valid[type=date]:not(.browser-default):focus,
+ input.valid[type=datetime]:not(.browser-default),
+ input.valid[type=datetime]:not(.browser-default):focus,
+ input.valid[type=datetime-local]:not(.browser-default),
+ input.valid[type=datetime-local]:not(.browser-default):focus,
+ input.valid[type=tel]:not(.browser-default),
+ input.valid[type=tel]:not(.browser-default):focus,
+ input.valid[type=number]:not(.browser-default),
+ input.valid[type=number]:not(.browser-default):focus,
+ input.valid[type=search]:not(.browser-default),
+ input.valid[type=search]:not(.browser-default):focus,
+ textarea.materialize-textarea.valid,
+ textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+   border-bottom: 1px solid #F3D503;
+   -webkit-box-shadow: 0 1px 0 0 #F3D503;
+           box-shadow: 0 1px 0 0 #F3D503;
+ }
+ 
+ input[type=range] + .thumb .value {
+   display: block;
+   width: 30px;
+   text-align: center;
+   color: #F3D503;
+   font-size: 0;
+   -webkit-transform: rotate(45deg);
+           transform: rotate(45deg);
+ }
+ 
+ .dropdown-content li > a, .dropdown-content li > span {
+   font-size: 16px;
+   color: black;
+   display: block;
+   line-height: 22px;
+   padding: 14px 16px;
+ }
+ 
+ .select-wrapper {
+ 
+ background-color: rgba(253, 216, 53, 0.1)!important;
+ border-radius: 20px;
+ 
+ }
+ 
+ 
+ input[type=range]::-webkit-slider-thumb {
+   background-color: #F3D503;
+ }
+ input[type=range]::-moz-range-thumb {
+   background-color: #F3D503;
+ }
+ input[type=range]::-ms-thumb {
+   background-color: #F3D503;
+ }
+ 
+ /***** These are to edit the thumb and the text inside the thumb *****/
+ input[type=range] + .thumb {
+   background-color: #dedede;
+ }
+ input[type=range] + .thumb.active .value {
+   color: #F3D503;
+ }
+ 
+ 
+ 
+ .select-wrapper input.select-dropdown {
+ 
+   border: none;
+  padding-left: 15px;
+  
+ }
+ 
+ .select-wrapper input.select-dropdown:active {
+ 
+   border: none;
+  
+  
+ }
+ 
+ .select-wrapper input.select-dropdown:focus {
+ 
+   border: none;
+  
+  
+ }
+ 
+ 
+ .select-dropdown .dropdown-trigger, .btn{
+ 
+   background-color: rgba(253, 216, 53, 0.1)!important;
+   border-radius: 20px;
+   
+   }
+ 
+ 
+ @media only screen and (min-width: 601px) {
+   nav.nav-extended .nav-wrapper {
+     min-height: 64px;
+   }
+   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+     height: 200px;
+     line-height: 64px;
+   }
+   .navbar-fixed {
+     height: 64px;
+   }
+ }
+ 
+ 
+ .nav-wrapper, .row, .col, a, p{
+   color: #2F2207;
+ }
+ 
+ .switch {
+   margin: 20px;
+ }
+ 
+ .has_formulas_auswahl_button{
+   margin-top: 2%;
+ }
+ 
+ 
+ 
+ .collapsible, .collapsible-header{
+   border-radius: 20px;
+ }
+ 
+ [type="radio"]:checked + span:after,
+ [type="radio"].with-gap:checked + span:before,
+ [type="radio"].with-gap:checked + span:after {
+   border: 2px solid #B71C1C !important;
+ }
+ 
+ [type="radio"]:checked + span:after,
+ [type="radio"].with-gap:checked + span:after {
+   background-color: #B71C1C !important;
+ }
+ 
+ .form-table th {
+   width: 2px;
+ }
+ 
+ .siegelBild {
+   max-width: 20% !important;
+   height: auto;
+ }
+ 
+ .nichtAnzeigen {
+   display: none !important;
+ }
+ 
+ ul.select-dropdown,
+ ul.dropdown-content {
+   width: 650px !important;
+   border-radius: 20px;
+ 
+ 
+ }
+ 
+
+
+ select.uid {
+   width: 65px !important;
+   border-radius: 20px;
+ 
+ 
+ }
+ 
+ 
+ .material-symbols-sharp {
+   font-variation-settings:
+   'FILL' 1,
+   'wght' 700,
+   'GRAD' 200,
+   'opsz' 48
+ }
+ 
+ .material-symbols-outlined {
+   font-variation-settings:
+   'FILL' 1,
+   'wght' 700,
+   'GRAD' 200,
+   'opsz' 48
+ }
+ 
+ 
+ 
+ #siegelBildWechselVorschau{max-width: auto !important;}
+ 
+   /*
+   When creating your CSS selector,
+   change "brown" to something of your choosing
+   */
+   .waves-effect.waves-brown .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: rgba(121, 85, 72, 0.65);
+    }
+ 
+    .file-field{
+     margin-top: 15px;
+     margin-bottom: 15px;
+   }
+ 
+   .switch {
+     margin-top: 6px;
+     margin-left: 0px;
+ }
+ 
+ 
+ .nichtAnzeigen{
+ 
+   display: none;
+   
+ }
+ 
+ 
+ select {
+   text-align: left;
+   text-align-last: left;
+   -moz-text-align-last: left;
+ }
+ 
+ 
+ 
+ .select-dropdown li.disabled,
+ .select-dropdown li.disabled > span,
+ .select-dropdown li.optgroup {
+   color: rgba(255, 0, 0, 0.325);
+   background-color: transparent;
+ }
